@@ -1,4 +1,4 @@
-package dw.tomcat.chapter1.pyrmont;
+package com.dw.tomcat.chapter1.pyrmont;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,8 +12,8 @@ import java.io.OutputStream;
  */
 public class Response {
     private static final int BUFFER_SIZE = 1024;
-    Request request;
-    OutputStream outputStream;
+    private Request request;
+    private OutputStream outputStream;
 
     public Response(OutputStream outputStream) {
         this.outputStream = outputStream;

@@ -1,4 +1,4 @@
-package dw.tomcat.chapter1.pyrmont;
+package com.dw.tomcat.chapter1.pyrmont;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import java.net.Socket;
  * @version 1.0
  */
 public class HttpServer {
-    public static final String WEB_ROOT = System.getProperty("user.dir") + File.separator + "webroot";
+    public static final String WEB_ROOT = System.getProperty("user.dir") + File.separator + "src\\main\\resources\\webroot";
     private static final String SHUTDOWN_COMMAND = "/SHUTDOWN";
     private boolean shutdown = false;
 
@@ -33,7 +33,6 @@ public class HttpServer {
         }
         //loop waiting for a request
         while (!shutdown) {
-            System.out.println("---");
             Socket socket = null;
             InputStream inputStream = null;
             OutputStream outputStream = null;

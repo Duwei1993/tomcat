@@ -1,4 +1,4 @@
-package dw.tomcat.chapter1.pyrmont;
+package com.dw.tomcat.chapter1.pyrmont;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
