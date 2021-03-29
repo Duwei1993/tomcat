@@ -8,7 +8,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.net.URLStreamHandler;
-
+/**
+ * @author DW
+ * @version  1.0
+ */
 public class ServletProcessor1 {
     public void process(Request request,Response response){
         String uri = request.getUri();

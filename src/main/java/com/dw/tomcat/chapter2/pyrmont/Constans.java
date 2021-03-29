@@ -1,7 +1,9 @@
 package com.dw.tomcat.chapter2.pyrmont;
 
-import java.io.File;
-
+/**
+ * @author DW
+ * @version  1.0
+ */
 public interface Constans {
     public static final String WEB_ROOT = "D:\\geektime\\tomcat\\src\\main\\resources\\webroot";
 }
