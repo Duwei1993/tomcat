@@ -1,5 +1,7 @@
 package com.dw.tomcat.chapter2.pyrmont;
 
+import com.dw.tomcat.utils.BufferUtil;
+
 import javax.servlet.*;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,21 +26,7 @@ public class Request implements ServletRequest{
 
     public void parse(){
         //read a set of characters from the socket
-        StringBuffer request = new StringBuffer(2048);
-        int i;
-        byte[] buffer = new byte[2048];
-        try {
-            i = inputStream.read(buffer);
-        }catch (IOException e){
-            e.printStackTrace();
-            i = -1;
-        }
-
-        for (int j = 0; j < i; j++){
-            request.append((char) buffer[j]);
-        }
-        System.out.println(request.toString());
-        uri = parseUri(request.toString());
+        uri = parseUri(BufferUtil.readInputStream(inputStream));
     }
 
     private String parseUri(String requestStr){
