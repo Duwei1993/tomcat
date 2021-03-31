@@ -43,7 +43,7 @@ public class Response implements ServletResponse{
                         "Content-type: text/html\r\n" +
                         "Content-Length: 23\r\n" +
                         "\r\n" +
-                        "<h1>File Not Found</h1>";
+                        "<h1>File Not  Found</h1>";
                 outputStream.write(errorMessage.getBytes());
             }
         } catch (Exception e) {

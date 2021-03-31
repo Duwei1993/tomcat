@@ -3,6 +3,10 @@ package com.dw.tomcat.utils;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * @author DW
+ * @version  1.0
+ */
 public class BufferUtil {
 
     /**
